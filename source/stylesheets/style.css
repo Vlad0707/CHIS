@@ -60,10 +60,6 @@ body {
 	margin-bottom: 100px;
 }
 
-article.about_us {
-	margin-bottom: 150px;
-}
-
 /* ALL */
 
 main {
@@ -125,6 +121,10 @@ p {
 	font-size: 1.3em;
 	margin-right: 10%;
 	overflow: hidden;
+}
+
+section:last-child {
+	margin-bottom: 100px;
 }
 
 
@@ -196,18 +196,6 @@ main li {
 	color: goldenrod;
 }
 
-
-/* CLEARFIX */
-.cf::before,
-.cf::after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf::after {
-    clear: both;
-}
-
 /* FOOTER */
 footer {
 	text-align: center;
@@ -239,6 +227,17 @@ footer {
   max-height: 40px;
 }
 
+/* CLEARFIX */
+.cf::before,
+.cf::after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf::after {
+    clear: both;
+}
+
 @media (max-width: 495px) {
 	.navbar-brand {
 		display: none;
@@ -251,11 +250,15 @@ footer {
 		text-align: center;
 	}
 
-	.section_wrapper img {
+	img {
 		margin-bottom: 50px;
 	}
 }
-
+@media (max-width: 350px) {
+	.section_wrapper img {
+		max-width: 300px;
+	}
+}
 @media (max-width: 580px) {
 	footer span {
 		display: block;
@@ -268,7 +271,11 @@ footer {
 		word-break: keep-all;
 	}
 }
-
+@media (max-width: 870px) {
+	.cred img {
+		display: none;
+	}
+}
 @media (max-width: 957px) {
 	 .bathroom_p, .bathroom_h2 {
 		clear: left;
@@ -276,6 +283,16 @@ footer {
 	}
 	.section_wrapper img {
 		margin-left: 10%;
+	}
+	.kitchen section>p, section>h2, section>img {
+		clear: left;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	.decks_patios h2, p, img {
+		clear: left;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 }
 
