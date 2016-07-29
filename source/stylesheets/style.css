@@ -33,31 +33,48 @@ body {
 	color: red;
 }
 
-/* CAROUSEL */
+.services_nav:hover, .services_nav {
+	display: block;
+} 
+
+/* GALLERY CAROUSEL */
+.carousel {
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+}
+
+.gallery_carousel_img img {
+	max-width: 50%;
+
+}
+
 .carousel-inner, .about-us h1 {
   text-align: center;
 }
 
 .carousel .item > img {
   display: inline-block;
-  width: auto;
-  max-height: 225px;
-}
-
-.item > img  {
-	height: 200px;
-	width: 300px;
+  max-width: 80%;
+  max-height: 500px;
+  border: 8px solid white;
 }
 
 /* HOME */
+
 .about-us {
 	max-width: 90%;
 	color: white;
-	text-decoration: 4em;
-	border-radius: 2px white;
+	border-radius: 2px;
 	margin-top: 15px;
 	margin-left: 5%;
 	margin-bottom: 100px;
+}
+
+.triangle {
+	width: 80%;
+	margin-left: 10%;
 }
 
 /* ALL */
@@ -175,18 +192,25 @@ main li {
 
 /* GALLERY */
 
+#gallery img {
+	border: 8px solid white;
+}
 
+#gallery h3 {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  z-index: 20;
+  color: black;
+  background-color: white;
+  padding: 2px;
+}
 
 /* CONTACT US */
 
 #contact_us p {
 	margin-bottom: 200px;
 }
-
-/* 
-#contact_us a {
-	text-decoration: none;
-}*/
 
 #contact_us h1, h3, p {
 	margin-left: 10%;
@@ -197,6 +221,7 @@ main li {
 }
 
 /* FOOTER */
+
 footer {
 	text-align: center;
 	position: fixed;
@@ -217,14 +242,11 @@ footer {
 	text-decoration: none;
 }
 
-.cred a::hover {
-
-}
-
 .cred img{
   display: inline-block;
   width: auto;
   max-height: 40px;
+  margin-bottom: 3px;
 }
 
 /* CLEARFIX */
@@ -236,6 +258,33 @@ footer {
 
 .cf::after {
     clear: both;
+}
+
+/*.site_map {
+	height: 20px;
+	background-color: lightgrey;
+}
+
+.site_map a {
+	display: inline;
+}
+
+.site_map a:hover {
+	color: goldenrod;
+}*/
+
+
+
+@media (max-width: 350px) {
+	.section_wrapper img {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 580px) {
+	footer span {
+		display: block;
+	}
 }
 
 @media (max-width: 495px) {
@@ -253,29 +302,32 @@ footer {
 	img {
 		margin-bottom: 50px;
 	}
-}
-@media (max-width: 350px) {
-	.section_wrapper img {
-		max-width: 300px;
+
+	#gallery h3 {
+		font-size: 12px;
+		margin-bottom: 20%;
 	}
+
 }
-@media (max-width: 580px) {
-	footer span {
-		display: block;
-	}
-}
+
 @media (max-width: 680px) {
 	.cred {
 		display: inline;
 		font-size: 3em;
 		word-break: keep-all;
 	}
+
+	#gallery h3 {
+		font-size: 15px;
+		left: 5%
 }
+
 @media (max-width: 870px) {
 	.cred img {
 		display: none;
 	}
 }
+
 @media (max-width: 957px) {
 	 .bathroom_p, .bathroom_h2 {
 		clear: left;
