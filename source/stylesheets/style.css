@@ -72,6 +72,10 @@ body {
 	margin-bottom: 100px;
 }
 
+.about-us h1 {
+	color: goldenrod;
+}
+
 .triangle {
 	width: 80%;
 	margin-left: 10%;
